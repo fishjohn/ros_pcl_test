@@ -1,0 +1,14 @@
+<launch>
+    <!--ros_pcl Node-->
+    <node pkg="ros_pcl"
+          type="ros_pcl"
+          name="ros_pcl"
+          output="screen"
+    />
+    <node pkg="teleop_twist_keyboard"
+          type="teleop_twist_keyboard.py"
+          name="keyboard"
+          output="screen"
+          launch-prefix="xterm -e"
+    />
+</launch>
